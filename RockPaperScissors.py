@@ -8,6 +8,7 @@ import random
 #creating main window for the GUI
 window = tk.Tk()
 window.title("RockPaperScissors")
+window.geometry("500x200")
 
 def playGame(playerChoice):
 
