@@ -40,6 +40,9 @@ The user inputs the temperature in either Celsius or Fahrenheit and the program 
 -Water Drink Reminder.py: 
 This project reminds the user to drink water at regular intervals throughout the day.  
 
+-TextToSpeech.py:
+This is a basic Python program that converts text input into speech output on a MacOS system using the built-in 'say' command. The user is prompted to enter the text they wish to convert, and the program will continue to run until the user enters "QUIT" to exit. It is a simple and straightforward tool that can be useful for anyone who needs a quick text-to-speech conversion on their Mac.
+
 ## Installation
 
 To use any of these projects, you'll need to have Python 3.x installed on your machine. You can download it [here](https://www.python.org/downloads/).
