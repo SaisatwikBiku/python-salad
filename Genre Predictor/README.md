@@ -8,7 +8,7 @@ To use this project, you will need to have Python 3.x installed on your computer
 
 You will also need to install the following libraries:
 
-pandas
+pandas,
 scikit-learn
 
 
