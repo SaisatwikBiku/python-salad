@@ -10,9 +10,8 @@ You will also need to install the following libraries:
 
 pandas
 scikit-learn
-You can install these libraries using pip:
 
-pip install pandas scikit-learn
+
 
 ## Contributing
 
