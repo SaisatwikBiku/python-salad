@@ -6,6 +6,9 @@ Welcome to the Python Salad repository! This is a collection of Python projects 
 
 Here are the projects currently included in this repository:
 
+-Impression Predictor:
+Impression Predictor is a Machine Learning program that predicts the number of clicks and impressions for a given query. The program uses Linear Regression to learn the relationship between the queries and their corresponding clicks and impressions, based on a dataset of past queries and their click and impression counts.
+
 -Genre Predictor:
 This is a machine learning project built with Python that predicts music genre preferences based on age and gender. The program reads a CSV file that contains data on age, gender, and genres liked by the user, where 0 represents female and 1 represents male. The program trains a machine learning model and outputs the accuracy rate of the model.
 
