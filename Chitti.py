@@ -1,4 +1,4 @@
-import os
+import os #MacOS
 import tkinter as tk
 import time as tp
 import random
