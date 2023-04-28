@@ -5,8 +5,14 @@ import random
 
 def greet():
     name = name_entry.get()
-    welcome = f"say Hello {name} ! I am Sam your Virtual Assistant." # System Voice : Samantha
+    welcome = f"say Hello {name} ! I am Sam your Virtual Assistant." # System Voice : Siri(India)
     os.system(welcome)
+
+def number_input():
+    number = number_entry.get()
+    timer_cmd = f"open -u https://www.bigtimer.net/?minutes={number}&repeat=false&target=1682701685557"
+    os.system(timer_cmd)
+    os.system(f"say Timer is set for {number} minutes. Press Start to continue")
 
 def execute_command():
     command = command_entry.get().lower()
@@ -25,7 +31,7 @@ def execute_command():
     elif command == "open google" or command == "google.com" or command == "google":
         os.system("say Opening Google Search Engine.")
         os.system("open -u https://www.google.com/")
-    elif command == "open whatsapp" or command == "whatsapp" or command == "chitti open whatsapp":   
+    elif command == "open whatsapp" or command == "whatsapp" or command == "sam open whatsapp":   
         os.system("say Opening WhatsApp.")
         os.system("open -u https://web.whatsapp.com/")
     elif command == "tell me a joke" or command == "tell a joke" or command == "joke" :
@@ -54,8 +60,14 @@ def execute_command():
     elif command == "what is weather here?" or command == "weather" :
         os.system("say Showing Weather.")
         os.system("open -u https://www.accuweather.com/en/in/hyderabad/202190/weather-forecast/202190")
+    elif command == "open youtube" or command == "youtube" or command == "yt"  or command == "sam open youtube" :
+        os.system("say Opening Youtube")
+        os.system("open -u https://www.youtube.com/")
+    elif command == "set timer" or command == "timer" :
+        os.system("say Sure. Input the number of minutes to set the timer in the Number Input Box.")
     else:
         os.system("say I did not get you master. Give a valid command.")
+
 
 
 root = tk.Tk()
@@ -69,6 +81,10 @@ command_label = tk.Label(root, text="Enter your command:")
 command_entry = tk.Entry(root)
 execute_button = tk.Button(root, text="Execute", command=execute_command)
 
+number_label = tk.Label(root, text="Number input:")
+number_entry = tk.Entry(root)
+number_button = tk.Button(root, text="Input", command=number_input)
+
 name_label.grid(row=0, column=0, padx=5, pady=5)
 name_entry.grid(row=0, column=1, padx=5, pady=5)
 greet_button.grid(row=0, column=2, padx=5, pady=5)
@@ -76,5 +92,11 @@ greet_button.grid(row=0, column=2, padx=5, pady=5)
 command_label.grid(row=1, column=0, padx=5, pady=5)
 command_entry.grid(row=1, column=1, padx=5, pady=5)
 execute_button.grid(row=1, column=2, padx=5, pady=5)
+
+number_label.grid(row=2, column=0, padx=5, pady=5)
+number_entry.grid(row=2, column=1, padx=5, pady=5)
+number_button.grid(row=2, column=2, padx=5, pady=5)
+
+
 
 root.mainloop()
