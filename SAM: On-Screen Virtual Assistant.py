@@ -5,7 +5,7 @@ import random
 
 def greet():
     name = name_entry.get()
-    welcome = f"say Hello {name} ! I am Sam your Virtual Assistant." # System Voice : Siri(India)
+    welcome = f"say Hello {name} ! I am Sam your Virtual Assistant. I am now ready to Assist you. Feel free to enter a command." # System Voice : Siri(India)
     os.system(welcome)
 
 def number_input():
