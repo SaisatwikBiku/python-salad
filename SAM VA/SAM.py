@@ -76,6 +76,9 @@ def execute_command():
         os.system("python Game.py")
     else:
         os.system("say I did not get you master. But I can search for the same on web for you")
+        for i in command :
+            if i == " ":
+                command = command.replace(" ", "+")
         os.system(f"open -u https://www.google.com/search?q={command}")
 
 
