@@ -2,17 +2,11 @@ import os #MacOS Only
 import tkinter as tk
 import time as tp
 import random
-
 def greet():
     name = name_entry.get()
     welcome = f"say Hello {name} ! I am Sam your Virtual Assistant. I am now ready to Assist you. Feel free to enter a command." # System Voice : Siri(India)
     os.system(welcome)
 
-def number_input():
-    number = number_entry.get()
-    timer_cmd = f"open -u https://www.bigtimer.net/?minutes={number}&repeat=false&target=1682701685557"
-    os.system(timer_cmd)
-    os.system(f"say Timer is set for {number} minutes. Press Start to continue")
 
 def execute_command():
     command = command_entry.get().lower()
@@ -63,8 +57,15 @@ def execute_command():
     elif command == "open youtube" or command == "youtube" or command == "yt"  or command == "sam open youtube" :
         os.system("say Opening Youtube")
         os.system("open -u https://www.youtube.com/")
+    elif command == "open twitter" or command == "twitter" or command == "tweet" :
+        os.system("say Opening Twitter")
+        os.system("open -u https://twitter.com/")
+    elif command == "open chatgpt" or command == "chatgpt" or command == "AI" or command == "ai":
+        os.system("say Opening ChatGPT")
+        os.system("open -u https://chat.openai.com/auth/login")
     elif command == "set timer" or command == "timer" :
-        os.system("say Sure. Input the number of minutes to set the timer in the Number Input Box.")
+        os.system("say Sure.")
+        os.system("python timer.py")
     elif command == "generate QR code" or command == "generate qr code" or command == "qr" or command == "generate qr" or command == "qr code":
         os.system("say Okay. Opening QR maker")
         os.system("python QRG_GUI.py")
@@ -74,6 +75,15 @@ def execute_command():
     elif command == "let us play a game" or command == "game" or command == "play a game" or command == "play with me" :
         os.system("say Okay. Opening a Game")
         os.system("python Game.py")
+    elif command == "open calculator" or command == "open camera" or command == "open calendar" or command == "open safari" or command == "open apple tv" or command == "open finder" or command == "open settings" or command == "open clock":
+        for i in command:
+            if i == " " :
+                command = command.replace(" ", " -a ")
+        os.system("say OK. Opening")
+        os.system(command)
+    elif command == "play a song" or command == "play" or command == "play song" or command == "play audio" :
+        os.system("say Okay. Please enter the song you want to play in the search bar.")
+        os.system("open -u https://wynk.in/music/search")
     else:
         os.system(f"say Searching the web for {command}")
         for i in command :
@@ -94,9 +104,7 @@ command_label = tk.Label(root, text="Enter your command:")
 command_entry = tk.Entry(root)
 execute_button = tk.Button(root, text="Execute", command=execute_command)
 
-number_label = tk.Label(root, text="Number input:")
-number_entry = tk.Entry(root)
-number_button = tk.Button(root, text="Input", command=number_input)
+
 
 name_label.grid(row=0, column=0, padx=5, pady=5)
 name_entry.grid(row=0, column=1, padx=5, pady=5)
@@ -106,9 +114,6 @@ command_label.grid(row=1, column=0, padx=5, pady=5)
 command_entry.grid(row=1, column=1, padx=5, pady=5)
 execute_button.grid(row=1, column=2, padx=5, pady=5)
 
-number_label.grid(row=2, column=0, padx=5, pady=5)
-number_entry.grid(row=2, column=1, padx=5, pady=5)
-number_button.grid(row=2, column=2, padx=5, pady=5)
 
 
 
