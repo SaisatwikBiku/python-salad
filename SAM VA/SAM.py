@@ -10,7 +10,7 @@ def greet():
 
 def execute_command():
     command = command_entry.get().lower()
-    if command == "hi":
+    if command == "hi" or command == "hello" or command == "namaste":
         greetings = f"say hey there, {name_entry.get()} ! How can I help you?"
         os.system(greetings)
     elif command == "how are you?":
