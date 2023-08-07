@@ -52,6 +52,9 @@ This is a basic Python program that converts text input into speech output on a 
 -QRGenerator.py:
 This code will convert the given URL into a QR Code. 
 
+-Todo_list.py:
+This code accompained by MySQL script will create a use database to systematically store ToDo list with CRUD interface
+
 ## Installation
 
 To use any of these projects, you'll need to have Python 3.x installed on your machine. You can download it [here](https://www.python.org/downloads/).
