@@ -55,6 +55,9 @@ This code will convert the given URL into a QR Code.
 -Todo_list.py:
 This code accompained by MySQL script will create a use database to systematically store ToDo list with CRUD interface
 
+-Pattern Probles:
+This file includes a collection of programming challenges related to pattern printing.
+
 ## Installation
 
 To use any of these projects, you'll need to have Python 3.x installed on your machine. You can download it [here](https://www.python.org/downloads/).
