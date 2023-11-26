@@ -61,6 +61,9 @@ This file includes a collection of programming challenges related to pattern pri
 -Online Banking System.py:
 Consists of several classes representing users, accounts, transactions, and the overall banking system. The system allows users to create accounts, deposit and withdraw money, view account details, and check transaction history.
 
+-WebScraper.ipynb:
+Scrap URLs from a dynamic websites.
+
 ## Installation
 
 To use any of these projects, you'll need to have Python 3.x installed on your machine. You can download it [here](https://www.python.org/downloads/).
