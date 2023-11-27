@@ -64,6 +64,9 @@ Consists of several classes representing users, accounts, transactions, and the 
 -WebScraper.ipynb:
 Scrap URLs from a dynamic websites.
 
+-PDF_Generator.ipynb:
+Create PDF files with custom content.
+
 ## Installation
 
 To use any of these projects, you'll need to have Python 3.x installed on your machine. You can download it [here](https://www.python.org/downloads/).
