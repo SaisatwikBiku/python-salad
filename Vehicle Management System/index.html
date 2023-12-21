@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Vehicle Management System</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Vehicle Management System</h1>
+
+    <form id="vehicleForm">
+      <label for="vehicleName">Vehicle Name:</label>
+      <input type="text" id="vehicleName" required>
+
+      <label for="vehicleType">Vehicle Type:</label>
+      <input type="text" id="vehicleType" required>
+
+      <label for="vehicleNumber">Registration No:</label>
+      <input type="text" id="vehicleNumber" required>
+
+      <button type="button" onclick="addVehicle()">Add Vehicle</button>
+    </form>
+
+    <ul id="vehicleList"></ul>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
