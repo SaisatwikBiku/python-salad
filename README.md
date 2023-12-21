@@ -1,6 +1,6 @@
 # Python Salad
 
-Welcome to the Python Salad repository! This is a collection of Python projects that I have been working on while learning the language.
+Welcome to the Python Salad repository! This is a collection of projects that I have been working on while learning programming.
 
 ## Projects
 
@@ -66,6 +66,9 @@ Scrap URLs from a dynamic websites.
 
 -PDF_Generator.ipynb:
 Create PDF files with custom content.
+
+-Vehicle Managent System (HTML/CSS/ JS):
+Easily add and list your vehicle with simple steps.
 
 ## Installation
 
