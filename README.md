@@ -12,6 +12,9 @@ Impression Predictor is a Machine Learning program that predicts the number of c
 -Genre Predictor:
 This is a machine learning project built with Python that predicts music genre preferences based on age and gender. The program reads a CSV file that contains data on age, gender, and genres liked by the user, where 0 represents female and 1 represents male. The program trains a machine learning model and outputs the accuracy rate of the model.
 
+-password-manager:
+Application to store and retrive passwords with encryption capabilities
+
 -Word Cloud: 
 This project generates a word cloud using the text from a given file. 
 It uses the wordcloud library to generate a visually appealing word cloud. 
